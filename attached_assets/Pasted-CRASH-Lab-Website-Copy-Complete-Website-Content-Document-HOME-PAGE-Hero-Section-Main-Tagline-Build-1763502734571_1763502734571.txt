@@ -1,0 +1,480 @@
+CRASH Lab Website Copy
+Complete Website Content Document
+
+HOME PAGE
+Hero Section
+Main Tagline: Building India's Future of Responsible Healthcare AI
+Subheading: CRASH Lab brings together clinicians, engineers, and data scientists to develop trustworthy AI solutions that work for India's diverse healthcare landscape.
+Call-to-Action Buttons:
+Join as Researcher
+Partner With Us
+
+Mission & Vision Section
+Section Header: Mission & Vision
+Mission We empower Indian clinicians and scientists to conduct world-class AI research by developing next-generation tools that are safe, equitable, and built for real-world clinical practice.
+Vision To establish CRASH Lab as the leading model for responsible healthcare AI research in India, setting global standards for safety, transparency, and inclusive innovation.
+
+Why CRASH Lab Section
+Section Header: Why CRASH Lab?
+Body Copy: India's healthcare needs demand that we invent, not just inherit, how AI is developed and deployed. We're built to enable busy clinicians to pioneer new frameworks and collaborative practices that set the standard for ethical, responsible healthcare AI.
+Key Differentiators:
+Flexible research environment for busy clinicians
+Focus on problems unique to Indian healthcare
+Ethics and equity at the foundation
+Real-world validation in diverse settings
+
+Four Pillars Section
+Section Header: Our Four Pillars
+Pillar 1: Data Commons Building national-scale, federated platforms for secure healthcare data sharing. We're solving India's fragmentation challenge while preserving privacy.
+Key Features:
+Federated health data platforms
+Privacy-preserving collaboration
+Infrastructure for national-scale AI benchmarking
+Pillar 2: Standards & Benchmarks Creating robust evaluation frameworks that assess AI systems for fairness, reliability, and clinical utility, not just accuracy.
+Key Features:
+Beyond accuracy metrics
+Interactive monitoring tools
+Gold standard development for regulators and innovators
+Pillar 3: AI Models for India Developing context-aware foundation models tailored to South Asian healthcare, with built-in bias mitigation and explainability.
+Key Features:
+Context-aware architectures
+Geometric and topology-driven learning
+Bias-aware innovation from the ground up
+Pillar 4: Human-Centric Design Co-creating intuitive AI tools with frontline clinicians through hyper-personalized workflows that reduce burnout and enhance care quality.
+Key Features:
+Co-creation with clinicians
+Personalized documentation systems
+Trusted AI-driven assistants
+
+Milestones Section
+Section Header: Our Journey
+Timeline:
+Q1 2024 | CRASH Lab Founded at Koita Centre for Digital Health
+Q3 2024 | First RSNA Research Cohort Launched
+Q4 2024 | 6 Papers Accepted at RSNA 2025 (Highest from any Indian lab)
+Q1 2025 | NeurIPS Research Cohort Initiated
+Q2 2025 | RSNA Cutting-Edge Track 
+Q3 2025 | Radiology's Last Exam v1.0 Publication 
+Future Outlook: Expanding collaborations across India and internationally, building the infrastructure for the next generation of responsible healthcare AI.
+
+Recent Publications & Blogs Section
+Section Header: Latest Research & Insights
+Subheading: Stay updated with our latest publications, research findings, and thought leadership in healthcare AI.
+CTA Button: View All Publications
+[Placeholder for blog cards with:
+Publication/Blog Title
+Brief excerpt (2-3 lines)
+Date
+Read More link]
+
+Team Section
+Section Header: Meet the Researchers
+Subheading: Our interdisciplinary team combines deep clinical expertise with cutting-edge AI research to solve India's most pressing healthcare challenges.
+Team Members (Slider Format):
+Dr. Suvrankar Datta Group Lead, CRASH Lab [Placeholder for qualifications and photo]
+
+
+Dr. Hakikat Bir Singh Bhatti [Placeholder for role, qualifications and photo]
+
+
+Dr. Lakshmi Venella Chowdhary [Placeholder for role, qualifications and photo]
+
+
+Dr. Mrudula Bhalke [Placeholder for role, qualifications and photo]
+
+
+Kautik Singh [Placeholder for role, qualifications and photo]
+
+
+Siddharth Reddy Anthireddy [Placeholder for role, qualifications and photo]
+
+
+CTA: Join Our Team
+
+As Seen In Section
+Section Header: Recognition & Media
+[Placeholder for media logos including:
+RSNA
+NeurIPS
+Academic journals
+News outlets
+Conference mentions]
+
+Footer
+Tagline: Pioneering responsible AI for India's healthcare future.
+Quick Links:
+About
+Research
+Publications
+Collaborate
+Contact
+Address: Koita Centre for Digital Health Ashoka University [Full address]
+Contact: Email: [contact email] Phone: [contact number]
+Social Media: [Links to LinkedIn, Twitter, etc.]
+Legal:
+Privacy Policy
+Terms of Use
+Data Protection
+
+ABOUT PAGE
+Page Header
+About CRASH Lab
+Who We Are Section
+Heading: Who We Are
+Body Copy: CRASH Lab (Centre for Responsible Autonomous Systems in Healthcare) is an experimental research studio at the Koita Centre for Digital Health, Ashoka University. Modeled after MIT Media Lab and inspired by the Medical AI Bootcamp (Harvard-MIT-Stanford), we're building India's capacity to lead in responsible healthcare AI.
+We are a virtual research studio that brings together leading minds from medicine, engineering, and data science to develop and rigorously test next-generation AI tools. Our focus is on ensuring these tools are safe, equitable, and ready for real-world deployment across India and beyond.
+
+Why We Started Section
+Heading: Why We Started
+Body Copy: We started CRASH Lab to answer one fundamental question: What does it take to enable Indian physicians to conduct world-class collaborative AI research and compete globally while solving problems that matter for India?
+The answer became clear. We needed a flexible research environment where busy clinicians could pioneer frameworks, prototypes, and practices that prioritize ethics, equity, and real-world impact. We needed to build infrastructure that doesn't exist yet. We needed to create standards when there were none.
+The Challenge: Risks around bias, explainability, privacy, and equitable access demand that we invent, not just inherit, the way AI is developed and deployed in healthcare.
+Our Response: CRASH Lab provides the space, resources, and collaborative ecosystem for Indian researchers to lead this invention process.
+
+Our Approach Section
+Heading: Our Approach
+Radical Collaboration We bring together clinicians, engineers, designers, and social scientists. Medicine meets technology. Research meets practice. Theory meets deployment.
+Open Science Infrastructure We believe in shared progress. Our data platforms, tools, and learnings are designed for collaboration. We're building national resources, not proprietary silos.
+Real-World Validation Our AI solutions aren't tested in perfect conditions. They're deployed and evaluated in diverse, resource-limited healthcare settings where they need to work.
+Bias & Fairness by Design Equity isn't an afterthought. It's fundamental. We audit, benchmark, and actively mitigate bias at every stage of development.
+Empowering Frontline Clinicians Healthcare workers shape, validate, and use our AI solutions. They're not just end-users; they're co-creators.
+
+Our Team Section
+Heading: Our Team
+Subheading: CRASH Lab has grown to over 40+ affiliated researchers across India's leading medical and technical institutions.
+Core Team: [Detailed profiles of core members with photos, qualifications, research interests, and contact information]
+Clinical Cohort: Our clinical researchers come from:
+AIIMS (Multiple campuses)
+JIPMER
+RML Hospital
+MAMC
+Regional medical colleges across India
+Technical Collaborators:
+IIT Bombay
+IIT Delhi
+IIT Jodhpur
+IIT Patna
+IISc Bangalore
+International AI labs
+CTA: View Full Team Directory
+
+Our Collaborations Section
+Heading: Collaborations & Partnerships
+Academic Partnerships:
+Harvard Medical School (Rajpurkar Lab, Manrai Lab)
+Stanford University
+MIT
+University of California, San Diego
+University of Virginia
+Singapore institutions (A*STAR, National University of Singapore)
+Healthcare Institutions:
+Leading hospitals across India
+Government health initiatives
+Private healthcare networks
+Industry Partners:
+Sarvam AI (Unlimited credits partnership)
+Axone Health
+Manentia AI
+C15 Diagnostic Centre
+10+ ongoing industry collaborations
+Funding Support:
+Koita Foundation
+DST India-Singapore Joint Grant
+ANRF Advanced Research Grant
+International SCCM Grant
+Google Academic Grant
+
+PUBLICATIONS & BLOGS PAGE
+Page Header
+Research & Insights
+Subheading: Advancing the science of responsible healthcare AI through rigorous research and transparent knowledge sharing.
+
+Filter Section
+Filter by:
+Year (2024, 2025, All)
+Type (Journal, Conference, Preprint, Blog)
+Topic (Foundation Models, Bias & Fairness, Agentic Workflows, Data Commons, Clinical AI)
+Status (Published, Accepted, Under Review, Preprint)
+
+Featured Publications Section
+Heading: Featured Publications
+[Cards for major publications including:]
+RSNA 2025 Accepted Papers:
+Stress-Test and Radiologist Blinded Validation of Multimodal Foundation Models
+Validation of RADAR and TRUST Metrics
+TRUST: A Novel Five-Point Scale for AI-Generated Radiology Reports
+Hyper-Personalized Clinical Documentation Workflows
+Agentic Workflows for Automated Preliminary Draft Creation
+[Additional accepted papers]
+Under Review:
+Subgroup Performance Guarantees for Fairness in Medical AI (NeurIPS)
+Grant Submissions:
+India-Singapore Joint Grant: Culturally-Congruent Vision Language Models
+ANRF Advanced Research Grant: AI-Driven Risk Stratification for Coronary Artery Disease
+SCCM Grant: Critical Care Data Dictionary Implementation
+
+Blog Section
+Heading: Insights & Perspectives
+[Blog post cards with:]
+Title
+Author(s)
+Date
+Topic tags
+Brief excerpt
+Read time
+Thumbnail image
+Topics Include:
+Building fair AI for diverse populations
+Lessons from deploying AI in resource-limited settings
+The future of agentic workflows in radiology
+Privacy-preserving federated learning in India
+Clinician perspectives on AI adoption
+
+ONGOING PROJECTS PAGE
+Page Header
+Active Research Projects
+Subheading: Explore our current initiatives and discover opportunities to contribute to shaping India's AI healthcare future.
+
+Data Commons Projects
+Project 1: Equitable Chest X-Ray Infrastructure Building infrastructure for sharing chest X-rays with clinical and sociodemographic parameters.
+Status: First stage cleared (India-Singapore Joint Grant)
+Collaborators:
+India: Dr. Suvrankar Datta, Prof. Anurag Agrawal, Dr. Jagjit Kaur
+Singapore: Asst. Prof. Swapnil Mishra, Assoc. Prof Feng Mengling
+Get Involved: [Link to contribution page]
+
+Project 2: Coronary Artery Disease Screening AI-driven risk stratification from chest X-rays for low-cost screening in Indian healthcare settings.
+Status: Submitted to ANRF
+Collaborators:
+PI: Dr. Deepak Mishra (IIT Jodhpur)
+Co-PIs: Multiple institutions including JIPMER, KMC Manipal
+Get Involved: [Link to contribution page]
+
+Project 3: ICU Data Digitalization Implementing the Critical Care Data Dictionary (C2D2) in diverse infrastructural settings.
+Status: Submitted to SCCM
+Collaborators:
+Ashoka University
+Bennett University
+Shiv Nadar University
+Hospitals: Ujala Cygnus, Shree Ram Janki Arogya Niketan
+Get Involved: [Link to contribution page]
+
+Standards & Benchmarks Projects
+Project 4: LLM Benchmarking for Indian Languages Comparing global and Indic LLMs for patient-facing clinical documents.
+Status: Accepted at KCR, submission ongoing to Indian Chest Society Conference
+Partner: Sarvam AI (unlimited credits partnership)
+Get Involved: [Link to contribution page]
+
+Project 5: Foundation Model Evaluation Robust benchmarks for radiology report generation models.
+Status: Accepted at RSNA 2025
+Industry Partners: Manentia AI, C15 Diagnostic Centre
+Get Involved: [Link to contribution page]
+
+Project 6: Agentic Workflow Evaluation Creating benchmarks and rubrics for autonomous clinical AI systems.
+Status: 2 papers accepted at RSNA 2025
+Industry Partner: Axone Health
+Get Involved: [Link to contribution page]
+
+Project 7: Multi-Agent System Security Safety and security vulnerabilities in healthcare multi-agent systems.
+Status: Ongoing
+Collaborators: IIT Patna, University of Virginia, cybersecurity experts
+Get Involved: [Link to contribution page]
+
+AI Models for India
+Project 8: IndicCXR Dataset India's largest chest X-ray and report-pair dataset for bias detection and mitigation.
+Status: Accepted at RSNA 2025, Featured in India-Singapore Grant
+Get Involved: [Link to contribution page]
+
+Project 9: RadNexus Agentic Workflow First-of-its-kind radiology reporting system with minimal radiologist input.
+Status: Accepted at RSNA 2025
+Get Involved: [Link to contribution page]
+
+Project 10: Subgroup Performance Guarantees Ensuring fairness across diverse patient populations in medical AI.
+Status: Submitted to NeurIPS
+Get Involved: [Link to contribution page]
+
+Human-Centric AI Projects
+Project 11: Hyper-Personalized Documentation Autonomous prompt optimization for clinical workflows.
+Status: Accepted at RSNA 2025
+Collaborators: Kutum Lab, Rajpurkar Lab (Harvard)
+Get Involved: [Link to contribution page]
+
+Project 12: Adolescent Mental Health Benchmark Creating benchmarks for AI in adolescent mental health (with Google Academic Grant).
+Status: Ongoing
+Lead: Debayan Gupta (Ashoka University)
+Get Involved: [Link to contribution page]
+
+How to Contribute Section
+Heading: Join Our Research
+For Clinicians: Bring your clinical expertise to shape AI that works in real-world settings.
+For Engineers & Data Scientists: Work on cutting-edge problems with real-world impact and access to unique datasets.
+For Students: Gain research experience at the intersection of medicine and AI.
+CTA Button: Submit Your Research Proposal
+
+COLLABORATE PAGE
+Page Header
+Collaborate With CRASH Lab
+Subheading: Join us in building the future of responsible healthcare AI for India.
+
+For Researchers Section
+Heading: For Researchers
+Intro: Join India's most dynamic healthcare AI research community. We welcome clinicians, engineers, and data scientists passionate about responsible innovation.
+What We Offer:
+Access to Resources:
+National-scale datasets across imaging, ICU, and clinical records
+State-of-the-art computational infrastructure
+Collaborative research platforms
+Industry partnerships for validation
+Research Support:
+Mentorship from leading experts in AI and medicine
+Rapid prototyping capabilities
+Funding opportunities through grants and partnerships
+Publication support and visibility
+Community:
+Regular seminars and workshops
+Cohort-based research programs
+Cross-institutional collaboration
+International partnerships
+Professional Development:
+Co-authorship opportunities
+Conference presentations
+Industry exposure
+Career advancement in healthcare AI
+Who Should Apply:
+Clinicians:
+Radiologists, intensivists, and specialists interested in AI
+Medical students and residents with research interests
+Healthcare administrators focused on technology adoption
+Technical Researchers:
+Machine learning engineers and data scientists
+Computer vision and NLP specialists
+Healthcare informaticians
+PhD students in relevant fields
+Requirements:
+Commitment to responsible, ethical AI development
+Interest in real-world healthcare challenges
+Willingness to work in interdisciplinary teams
+Available for minimum 10 hours per week
+CTA Button: Apply to Join Research Team
+
+For Industry Partners Section
+Heading: For Industry Partners
+Intro: Co-develop and validate AI solutions that work in India's diverse healthcare settings. From proof-of-concept to real-world deployment, we offer unique capabilities for responsible AI innovation.
+Partnership Opportunities:
+Joint Research Projects:
+Co-development of novel AI solutions
+Access to clinical expertise and datasets
+Rigorous validation in real-world settings
+Publication and IP collaboration models
+Technology Validation:
+Independent evaluation of AI systems
+Bias and fairness auditing
+Clinical utility assessment
+Regulatory pathway support
+Data Platform Access:
+Federated data infrastructure
+Privacy-preserving collaboration mechanisms
+Diverse, representative datasets
+Benchmark participation
+Clinical Deployment Studies:
+Pilot implementations in partner hospitals
+User experience research with clinicians
+Health economics and outcomes research
+Implementation science support
+What We Bring:
+Clinical Network:
+40+ affiliated clinicians across leading institutions
+Direct access to end-users and decision-makers
+Real-world testing environments
+Clinical workflow expertise
+Technical Excellence:
+State-of-the-art AI research capabilities
+Rigorous evaluation frameworks
+Open-source contributions
+Academic credibility
+Ethical Framework:
+Established bias mitigation protocols
+Transparency and explainability standards
+Patient privacy protection
+Regulatory alignment
+Current Industry Partners:
+Sarvam AI (LLM partnership)
+Axone Health (Agentic workflows)
+Manentia AI (Foundation models)
+C15 Diagnostic Centre (Validation)
+10+ active collaborations
+Partnership Models:
+Research Collaboration: Joint projects with co-authored publications and shared IP
+Validation Services: Independent testing and certification of AI systems
+Data Partnership: Contribution to and access of federated data commons
+Deployment Partnership: Co-implementation in real-world clinical settings
+Funding Partnership: Grant co-application and research sponsorship
+CTA Button: Discuss Partnership Opportunities
+
+Contact Section
+Heading: Get in Touch
+General Inquiries: Email: [general contact] Phone: [phone number]
+Research Collaboration: Dr. Suvrankar Datta, Group Lead Email: [research contact]
+Industry Partnerships: [Industry liaison contact] Email: [industry contact]
+Media & Press: Email: [press contact]
+Address: CRASH Lab Koita Centre for Digital Health Ashoka University [Full address]
+
+FAQ Section
+Heading: Frequently Asked Questions
+Q: Who can join CRASH Lab as a researcher? A: We welcome clinicians, engineers, data scientists, and students passionate about responsible healthcare AI. We value diverse perspectives and interdisciplinary collaboration.
+Q: Do I need to be based in India? A: While most of our work focuses on Indian healthcare, we have several international collaborators. Remote collaboration is possible for the right fit.
+Q: What is the time commitment? A: We recommend a minimum of 10 hours per week for active research participation, though this varies by project.
+Q: How does IP and authorship work? A: We follow standard academic practices with transparent authorship criteria. For industry partnerships, we develop customized agreements that balance open science with commercial interests.
+Q: How long does the application process take? A: We typically respond to researcher applications within 2 weeks and partnership inquiries within 1 week.
+Q: Is there funding available? A: We actively pursue grants and have partnerships that can support research. Funding availability varies by project.
+
+GLOBAL NAVIGATION
+Main Menu:
+Home
+About
+Research
+Publications & Blogs
+Ongoing Projects
+Collaborate
+For Researchers
+For Industry
+Team
+Contact
+
+GENERAL MESSAGING GUIDELINES
+Tone: Professional yet accessible, confident but not arrogant, inspiring and action-oriented
+Voice: First-person plural (we), inclusive, collaborative
+Key Messages to Reinforce:
+India-focused but globally competitive
+Responsible AI as fundamental, not optional
+Clinician-led and clinician-centered
+Real-world validation and impact
+Open science and collaboration
+Ethics and equity by design
+Avoid:
+Overpromising on AI capabilities
+Excluding non-technical audiences
+Purely technical jargon without context
+Comparing ourselves negatively to other institutions
+Claims without evidence
+
+CALL-TO-ACTION HIERARCHY
+Primary CTAs:
+Join as Researcher
+Partner With Us
+Submit Research Proposal
+Discuss Partnership
+Secondary CTAs:
+View Publications
+Explore Projects
+Meet the Team
+Contact Us
+Learn More
+Tertiary CTAs:
+Read Full Paper
+View Project Details
+See All News
+Follow on [Social Media]
+
+Document Version 1.0 Last Updated: November 2024 Created for: CRASH Lab Website Development
+
