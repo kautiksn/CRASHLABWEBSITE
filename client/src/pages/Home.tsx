@@ -105,21 +105,6 @@ const Hero = () => {
       <InteractiveGrid />
       
       <div className="container mx-auto px-6 relative z-10 text-center">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/50 border border-primary/10 text-sm font-medium text-primary shadow-sm backdrop-blur-sm cursor-pointer hover:bg-secondary/80 transition-colors">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
-            Building India's Future of Responsible AI
-          </div>
-        </motion.div>
-
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -156,93 +141,68 @@ const Hero = () => {
   );
 };
 
-const BentoGrid = () => {
+const Pillars = () => {
+  const pillars = [
+    {
+      icon: Database,
+      title: "Data Commons",
+      desc: "Building national-scale, federated platforms for secure healthcare data sharing to solve fragmentation."
+    },
+    {
+      icon: Scale,
+      title: "Standards & Benchmarks",
+      desc: "Creating robust evaluation frameworks that assess AI systems for fairness, reliability, and clinical utility."
+    },
+    {
+      icon: BrainCircuit,
+      title: "AI Models for India",
+      desc: "Developing context-aware foundation models tailored to South Asian healthcare with bias mitigation."
+    },
+    {
+      icon: Users,
+      title: "Human-Centric Design",
+      desc: "Co-creating intuitive AI tools with frontline clinicians to reduce burnout and enhance care quality."
+    }
+  ];
+
   return (
-    <section className="py-32 bg-gradient-to-b from-background to-secondary/20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Everything you need to build</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Our platform provides the tools, standards, and data infrastructure required to create world-class clinical AI.
-            </p>
+    <section className="py-32 relative overflow-hidden text-white">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={greenBg} 
+          alt="Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/20 to-primary/90" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-2xl mb-20">
+          <Badge variant="outline" className="text-white border-white/30 mb-4">Our Focus Areas</Badge>
+          <h2 className="text-4xl md:text-6xl font-serif mb-6">The Four Pillars of Responsible AI</h2>
+          <p className="text-lg text-white/80">
+            We are building the infrastructure, standards, and models needed for the next generation of healthcare.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(300px,auto)]">
-          {/* Large Card - Data Commons */}
-          <div className="md:col-span-2 group relative overflow-hidden rounded-[2.5rem] bg-white border border-black/5 shadow-sm hover:shadow-md transition-all p-10 flex flex-col justify-between">
-            <div className="absolute top-0 right-0 p-10 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Database className="h-64 w-64" />
-            </div>
-            <div className="relative z-10">
-                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 text-primary">
-                    <Database className="h-6 w-6" />
-                </div>
-                <h3 className="text-3xl font-bold mb-4 tracking-tight">High-Performance Data Commons</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
-                    Connect to the federated web with India's unified health data surface. Designed for speed, privacy, and infinite scale.
-                </p>
-            </div>
-            <div className="mt-8 relative z-10">
-                 <Button variant="outline" className="rounded-full">Learn about Data Commons</Button>
-            </div>
-          </div>
-
-          {/* Tall Card - Standards */}
-          <div className="md:row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-[#0a0a0a] text-white p-10 flex flex-col">
-            <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent opacity-20" />
-            <div className="h-12 w-12 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-white">
-                <Scale className="h-6 w-6" />
-            </div>
-            <h3 className="text-2xl font-bold mb-4 tracking-tight">Gold Standards</h3>
-            <p className="text-white/60 leading-relaxed mb-12">
-                Creating robust evaluation frameworks that assess AI systems for fairness, reliability, and clinical utility.
-            </p>
-            
-            <div className="mt-auto relative">
-                 {/* Abstract UI visualization */}
-                 <div className="bg-white/5 rounded-xl p-4 border border-white/10 backdrop-blur-sm">
-                    <div className="flex justify-between items-center mb-3 text-sm font-mono text-white/40">
-                        <span>Metric</span>
-                        <span>Score</span>
-                    </div>
-                    <div className="space-y-3">
-                        {['Fairness', 'Reliability', 'Utility'].map((item, i) => (
-                            <div key={i} className="flex justify-between items-center">
-                                <span className="text-sm font-medium">{item}</span>
-                                <div className="flex items-center gap-2">
-                                    <div className="h-1.5 w-24 bg-white/10 rounded-full overflow-hidden">
-                                        <div className="h-full bg-green-400 rounded-full" style={{ width: `${85 + i * 5}%`}} />
-                                    </div>
-                                    <span className="text-xs font-mono text-green-400">9{i}.4%</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                 </div>
-            </div>
-          </div>
-
-          {/* Small Card - Models */}
-          <div className="group relative overflow-hidden rounded-[2.5rem] bg-white border border-black/5 shadow-sm hover:shadow-md transition-all p-10">
-             <div className="h-12 w-12 rounded-2xl bg-orange-50 flex items-center justify-center mb-6 text-orange-600">
-                <BrainCircuit className="h-6 w-6" />
-             </div>
-             <h3 className="text-2xl font-bold mb-3 tracking-tight">Models for India</h3>
-             <p className="text-muted-foreground">
-                Context-aware foundation models tailored to South Asian healthcare.
-             </p>
-          </div>
-
-          {/* Small Card - Design */}
-          <div className="group relative overflow-hidden rounded-[2.5rem] bg-white border border-black/5 shadow-sm hover:shadow-md transition-all p-10">
-             <div className="h-12 w-12 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 text-blue-600">
-                <Users className="h-6 w-6" />
-             </div>
-             <h3 className="text-2xl font-bold mb-3 tracking-tight">Human-Centric</h3>
-             <p className="text-muted-foreground">
-                Co-creating intuitive AI tools with frontline clinicians.
-             </p>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {pillars.map((pillar, idx) => (
+            <motion.div
+              key={idx}
+              whileHover={{ y: -10 }}
+              className="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors group"
+            >
+              <pillar.icon className="h-10 w-10 mb-6 text-accent group-hover:text-white transition-colors" />
+              <h3 className="text-xl font-semibold mb-3">{pillar.title}</h3>
+              <p className="text-sm text-white/70 leading-relaxed">
+                {pillar.desc}
+              </p>
+              <div className="mt-6 pt-6 border-t border-white/10 flex items-center text-sm font-medium text-accent cursor-pointer group-hover:text-white">
+                Learn more <ArrowRight className="h-4 w-4 ml-2" />
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
@@ -321,6 +281,69 @@ const Milestones = () => {
   );
 };
 
+const Team = () => {
+  const members = [
+    { name: "Dr. Suvrankar Datta", role: "Group Lead, CRASH Lab", initials: "SD" },
+    { name: "Dr. Hakikat Bir Singh Bhatti", role: "Clinical Researcher", initials: "HB" },
+    { name: "Dr. Lakshmi Venella", role: "Clinical Researcher", initials: "LV" },
+    { name: "Dr. Mrudula Bhalke", role: "Clinical Researcher", initials: "MB" },
+    { name: "Kautik Singh", role: "Technical Lead", initials: "KS" },
+    { name: "Siddharth Reddy", role: "Research Fellow", initials: "SR" },
+  ];
+
+  return (
+    <section id="team" className="py-24 bg-secondary/20">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+          <div className="max-w-2xl">
+            <h2 className="text-4xl font-serif mb-6">Meet the Researchers</h2>
+            <p className="text-muted-foreground text-lg">
+              Our interdisciplinary team combines deep clinical expertise with cutting-edge AI research to solve India's most pressing healthcare challenges.
+            </p>
+          </div>
+          <div className="flex gap-2 mt-6 md:mt-0">
+            {/* Carousel controls could go here if external */}
+          </div>
+        </div>
+
+        <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+          <CarouselContent className="-ml-4">
+            {members.map((member, idx) => (
+              <CarouselItem key={idx} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                <div className="group relative overflow-hidden rounded-2xl bg-white p-1 shadow-sm hover:shadow-md transition-all h-full">
+                  <div className="aspect-[3/4] bg-muted rounded-xl mb-4 overflow-hidden relative">
+                     <div className="absolute inset-0 flex items-center justify-center bg-primary/5 text-primary font-serif text-4xl opacity-20">
+                       {member.initials}
+                     </div>
+                     {/* Use placeholder avatar logic or images if we had them */}
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                           <p className="font-medium">View Profile</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold leading-tight mb-1">{member.name}</h3>
+                    <p className="text-sm text-muted-foreground">{member.role}</p>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-end gap-2 mt-8">
+             <CarouselPrevious className="static translate-y-0" />
+             <CarouselNext className="static translate-y-0" />
+          </div>
+        </Carousel>
+        
+        <div className="mt-12 text-center">
+          <Button size="lg" variant="outline" className="rounded-full px-8">Join Our Team</Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   return (
     <footer className="bg-background text-foreground py-20 border-t border-black/5">
@@ -386,9 +409,10 @@ export default function Home() {
     <div className="min-h-screen bg-background font-sans text-foreground selection:bg-primary/20">
       <Navbar />
       <Hero />
-      <BentoGrid />
+      <Pillars />
       <Stats />
       <Milestones />
+      <Team />
       <Footer />
     </div>
   );
