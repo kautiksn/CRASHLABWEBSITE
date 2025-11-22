@@ -92,44 +92,78 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[1.1] mb-8 text-foreground">
-              Building India's Future of Responsible Healthcare AI
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-lg leading-relaxed">
-              CRASH Lab brings together clinicians, engineers, and data scientists to develop trustworthy AI solutions that work for India's diverse healthcare landscape.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="rounded-full px-8 h-12 text-base">
-                Join as Researcher
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base">
-                Partner With Us
-              </Button>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="absolute inset-0 bg-gradient-to-tr from-secondary/50 to-transparent rounded-full blur-3xl -z-10" />
-            <img 
-              src={heroImage} 
-              alt="Abstract Responsible AI" 
-              className="w-full h-auto object-cover rounded-3xl shadow-2xl transform md:scale-110 hover:scale-105 transition-transform duration-700 ease-out"
-            />
-          </motion.div>
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#030303] text-white">
+      {/* Background Effects */}
+      <div className="absolute inset-0 z-0">
+        {/* Dotted Grid Pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+        
+        {/* Vertical Lines / Beams */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute left-1/4 top-0 w-[1px] h-full bg-gradient-to-b from-transparent via-white/10 to-transparent opacity-50" />
+          <div className="absolute right-1/4 top-0 w-[1px] h-full bg-gradient-to-b from-transparent via-white/10 to-transparent opacity-50" />
+          <div className="absolute left-1/2 top-0 w-[1px] h-full bg-gradient-to-b from-transparent via-white/10 to-transparent opacity-30" />
         </div>
+
+        {/* Ambient Glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-white/5 blur-[100px] rounded-full pointer-events-none" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10 text-center">
+        {/* Badge */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white/80 mb-8 backdrop-blur-sm hover:bg-white/10 transition-colors cursor-pointer"
+        >
+          <span className="flex h-1.5 w-1.5 rounded-full bg-orange-500" />
+          Building the future of AI
+        </motion.div>
+
+        {/* Main Heading */}
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="text-6xl md:text-7xl lg:text-8xl font-sans font-medium tracking-tight mb-8 max-w-5xl mx-auto"
+        >
+          <span className="hero-text-gradient block pb-2">Scale your research</span>
+          <span className="hero-text-gradient text-white/60">with responsible AI</span>
+        </motion.h1>
+
+        {/* Subheading */}
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed"
+        >
+          CRASH Lab brings together clinicians, engineers, and data scientists to develop trustworthy AI solutions that work for India's diverse healthcare landscape.
+        </motion.p>
+
+        {/* Buttons */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+        >
+          {/* Glowing Button */}
+          <div className="relative group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-white/30 to-white/0 rounded-full blur opacity-50 group-hover:opacity-100 transition duration-500 group-hover:duration-200 animate-tilt"></div>
+            <button className="relative px-8 py-4 bg-black rounded-full leading-none flex items-center gap-2 overflow-hidden ring-1 ring-white/20 group-hover:ring-white/50 transition-all duration-300">
+              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+              <span className="text-sm font-medium text-white tracking-wide uppercase">Start Collaborating</span>
+              <ArrowRight className="w-4 h-4 text-white/70 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
+
+          {/* Secondary Link */}
+          <button className="text-sm font-medium text-white/60 hover:text-white transition-colors">
+            View Documentation
+          </button>
+        </motion.div>
       </div>
     </section>
   );
