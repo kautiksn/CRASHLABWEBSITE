@@ -18,97 +18,145 @@ export function InteractiveGrid({ className }: InteractiveGridProps) {
     if (!ctx) return;
 
     let animationFrameId: number;
-    let points: { x: number; y: number; originX: number; originY: number }[] = [];
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     
     // Configuration
-    const gridSize = 40;
-    const pointRadius = 1.5;
-    const interactionRadius = 200;
-    const returnSpeed = 0.1;
-    const displaceStrength = 0.5; // Points move away from cursor
+    const particleCount = Math.floor((width * height) / 15000); // Density based on screen size
+    const connectionDistance = 140;
+    const mouseDistance = 200;
+    
+    // Colors (Light Mode)
+    const baseColor = "rgba(0, 0, 0, 0.1)"; // Faint connections
+    const activeColor = "rgba(20, 80, 50, 0.6)"; // Greenish active connections
+    const nodeColor = "rgba(0, 0, 0, 0.2)";
+    
+    let mouse = { x: -1000, y: -1000 };
+    
+    interface Particle {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      size: number;
+    }
 
-    let mouseX = -1000;
-    let mouseY = -1000;
+    const particles: Particle[] = [];
 
-    const resize = () => {
-      const { innerWidth, innerHeight } = window;
-      canvas.width = innerWidth;
-      canvas.height = innerHeight;
+    const init = () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
       
-      // Initialize points
-      points = [];
-      for (let x = 0; x < innerWidth; x += gridSize) {
-        for (let y = 0; y < innerHeight; y += gridSize) {
-          points.push({
-            x,
-            y,
-            originX: x,
-            originY: y,
-          });
-        }
+      particles.length = 0;
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+          size: Math.random() * 2 + 1
+        });
       }
     };
 
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const draw = () => {
+      ctx.clearRect(0, 0, width, height);
       
-      // Draw connections (optional, can be expensive)
-      // ctx.beginPath();
-      // ctx.strokeStyle = "rgba(0, 0, 0, 0.03)";
-      
-      points.forEach((point) => {
-        // Calculate distance to mouse
-        const dx = mouseX - point.x;
-        const dy = mouseY - point.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
+      // Update and draw particles
+      for (let i = 0; i < particles.length; i++) {
+        let p = particles[i];
         
-        if (distance < interactionRadius) {
-          const force = (interactionRadius - distance) / interactionRadius;
-          const angle = Math.atan2(dy, dx);
-          
-          // Move point away from mouse
-          const moveX = Math.cos(angle) * force * interactionRadius * displaceStrength;
-          const moveY = Math.sin(angle) * force * interactionRadius * displaceStrength;
-          
-          point.x -= (point.x - (point.originX - moveX)) * returnSpeed;
-          point.y -= (point.y - (point.originY - moveY)) * returnSpeed;
+        // Move
+        p.x += p.vx;
+        p.y += p.vy;
+        
+        // Bounce off edges
+        if (p.x < 0 || p.x > width) p.vx *= -1;
+        if (p.y < 0 || p.y > height) p.vy *= -1;
+        
+        // Mouse interaction
+        const dxMouse = mouse.x - p.x;
+        const dyMouse = mouse.y - p.y;
+        const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
+        
+        // Draw Node
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        if (distMouse < mouseDistance) {
+             ctx.fillStyle = activeColor;
+             // Gently attract to mouse if close
+             if (distMouse > 50) {
+               p.x += dxMouse * 0.01;
+               p.y += dyMouse * 0.01;
+             }
         } else {
-          // Return to origin
-          point.x -= (point.x - point.originX) * returnSpeed;
-          point.y -= (point.y - point.originY) * returnSpeed;
+             ctx.fillStyle = nodeColor;
+        }
+        ctx.fill();
+
+        // Connect to mouse
+        if (distMouse < mouseDistance) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.strokeStyle = `rgba(20, 80, 50, ${1 - distMouse / mouseDistance})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
         }
 
-        // Draw point
-        ctx.beginPath();
-        ctx.arc(point.x, point.y, pointRadius, 0, Math.PI * 2);
-        // Cohere Green color for dots
-        ctx.fillStyle = `rgba(20, 60, 40, ${Math.max(0.1, 1 - distance / 500)})`; 
-        ctx.fill();
-      });
+        // Connect to other particles
+        for (let j = i + 1; j < particles.length; j++) {
+          let p2 = particles[j];
+          let dx = p.x - p2.x;
+          let dy = p.y - p2.y;
+          let dist = Math.sqrt(dx * dx + dy * dy);
 
-      animationFrameId = requestAnimationFrame(animate);
+          if (dist < connectionDistance) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            
+            // If both are near mouse, make line stronger/colored
+            const p2DistMouse = Math.sqrt(Math.pow(mouse.x - p2.x, 2) + Math.pow(mouse.y - p2.y, 2));
+            
+            if (distMouse < mouseDistance && p2DistMouse < mouseDistance) {
+               ctx.strokeStyle = activeColor;
+               ctx.lineWidth = 1.5;
+            } else {
+               ctx.strokeStyle = baseColor;
+               ctx.lineWidth = 0.5;
+            }
+            
+            ctx.stroke();
+          }
+        }
+      }
+      
+      animationFrameId = requestAnimationFrame(draw);
     };
 
     const handleMouseMove = (e: MouseEvent) => {
       const rect = canvas.getBoundingClientRect();
-      mouseX = e.clientX - rect.left;
-      mouseY = e.clientY - rect.top;
+      mouse.x = e.clientX - rect.left;
+      mouse.y = e.clientY - rect.top;
     };
     
     const handleMouseLeave = () => {
-      mouseX = -1000;
-      mouseY = -1000;
+      mouse.x = -1000;
+      mouse.y = -1000;
     }
 
-    window.addEventListener("resize", resize);
+    window.addEventListener("resize", init);
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseout", handleMouseLeave);
     
-    resize();
-    animate();
+    init();
+    draw();
 
     return () => {
-      window.removeEventListener("resize", resize);
+      window.removeEventListener("resize", init);
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseout", handleMouseLeave);
       cancelAnimationFrame(animationFrameId);
@@ -118,7 +166,7 @@ export function InteractiveGrid({ className }: InteractiveGridProps) {
   return (
     <canvas
       ref={canvasRef}
-      className={cn("absolute inset-0 z-0 pointer-events-none", className)}
+      className={cn("absolute inset-0 z-0 pointer-events-none opacity-60", className)}
     />
   );
 }
